@@ -1,109 +1,66 @@
-# Kran-Z App
+# Kran-Z
 
-The Kran-Z app is designed to enhance the safety, health monitoring, and connectivity experience for users of the Kran-Z smart helmet. Built using **Flutter**, this app provides a user-friendly interface to monitor helmet status, track locations, access emergency contacts, and manage helmet settings.
+**Kran-Z** is an advanced smart helmet solution that improves visibility, communication, and safety monitoring for riders. This repository contains both the mobile application to connect with the helmet and the design files for the helmet itself.
 
-## Table of Contents
+## Repository Structure
 
-- [Features](#features)
-- [Screens](#screens)
-  - [Loading Screen](#loading-screen)
-  - [Home Page](#home-page)
-  - [Profile Screen](#profile-screen)
-- [Installation](#installation)
-- [Dependencies](#dependencies)
-- [App Structure](#app-structure)
-- [Usage](#usage)
-- [License](#license)
+```plaintext
+Kran-Z/
+|-- Flutter_App/
+|     |-- (the flutter files)
+|     |-- README.md
+|
+|-- Fusion 360 Design/ 
+|     |-- (the .f3d design file)
+|     |-- (top, bottom, side, back, front view PNG files of the design) 
+|     |-- README.md
+|
+|-- README.md
+```
 
-## Features
+## Contents
 
-- **Helmet Status Monitoring**: View the helmet’s battery status and connectivity.
-- **Quick Connect/Disconnect**: Easily connect to or disconnect from the helmet.
-- **Profile Management**: Manage user profile information, including emergency contacts.
-- **Helmet Health & Timeline**: Monitor helmet health and view helmet activity history.
-- **Location Tracking**: Track helmet location in real-time.
-- **Customization**: Change turn signal colors and access helmet information.
-- **Accessible Drawer Menu**: A drawer menu provides quick navigation to helmet and user features.
+1. **Flutter_App/** 
+   Contains all source code for the Kran-Z mobile app. The app is designed to seamlessly connect with the Kran-Z Smart Helmet, providing access to various features directly from the user's mobile device.
 
-## Screens
+   - **Features:**
+     - Real-time helmet connectivity
+     - Battery and connection status display
+     - Profile management, including emergency contact information
+     - Additional features for helmet health, timeline tracking, location, and turn signal color changes
 
-### Loading Screen
+   For more details, please refer to the [Flutter_App README](Flutter_App/README.md).
+2. **Fusion 360 Design/**
+   Contains the Autodesk Fusion 360 design file (.f3d) for the Kran-Z Smart Helmet and renders from various perspectives (top, bottom, side, back, front). This design provides a detailed 3D model of the helmet, allowing further customization or reference for manufacturing.
 
-The **LoadingScreen** displays the Kran-Z logo and a loading bar. Once loading completes, it navigates automatically to the Home Page.
+   For instructions on accessing and viewing the design, please refer to the [Fusion 360 Design README](Fusion%20360%20Design/README.md).
 
-### Home Page
+## Team
 
-The **HomePage** displays:
+We are a dedicated team focused on advancing safety and technology in protective wear. Meet the members behind  **Kran-Z** :
 
-- Helmet status (battery level, connection status).
-- A connect/disconnect button.
-- A navigation drawer with additional features:
-  - Helmet Health
-  - Helmet Timeline
-  - Location Tracking
-  - Change Turn Signal Colors
-  - About Kran-Z
+* **M. Satwik**
+  [GitHub Profile](https://github.com/satwik45666)
+* **U. Jayadhar**
+  [GitHub Profile](https://github.com/U-Jayadhar)
+* **N. Abhinav**
+  [GitHub Profile](https://github.com/abhinav269747)
+* **D. Aishwarya**
+  [GitHub Profile](https://github.com/Aishwarya2504)
 
-### Profile Screen
+Each team member brings expertise across hardware design, mobile development, and embedded systems to create a high-tech solution for helmet safety.
 
-The **ProfileScreen** allows users to:
+## Getting Started
 
-- View profile information (name, email, and emergency contact).
-- Edit profile and logout options.
+To use the **Kran-Z** mobile app or explore the helmet's 3D design, follow the instructions in each respective folder.
 
 ## Installation
 
-1. **Clone the repository**:
-
-   ```bash
+1. Clone the repository:
+   ```shell
    git clone https://github.com/yourusername/Kran-Z-App.git
+   ```
+2. Navigate to the project directory:
+   ```shell
    cd Kran-Z-App
    ```
-2. **Install Flutter dependencies**:
-
-   ```bash
-   flutter pub get
-   ```
-3. **Run the app**:
-
-   ```bash
-   flutter run
-   ```
-4. Ensure the required assets (e.g., `kranz_logo.png`, `helmet.svg`) are added to `assets/` and specified in `pubspec.yaml`.
-
-## Dependencies
-
-The Kran-Z app uses the following dependencies:
-
-- **google_fonts**: For using custom Google Fonts in the app.
-- **percent_indicator**: For the loading bar on the loading screen.
-- **flutter_svg**: To display SVG assets for helmet icons.
-
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  google_fonts: ^3.0.1
-  percent_indicator: ^4.2.2
-  flutter_svg: ^1.1.3
-```
-
-## App Structure
-
-```plaintext
-lib/
-├── main.dart                   # Main application file
-├── screens/
-│   ├── LoadingScreen.dart       # Loading screen with progress indicator
-│   ├── HomePage.dart            # Home page with helmet status and connectivity
-│   └── ProfileScreen.dart       # Profile screen with user information
-assets/
-├── kranz_logo.png               # App logo image
-└── helmet.svg                   # SVG image of the helmet
-```
-
-## Usage
-
-1. **Loading**: Open the app, and the loading screen will display until resources are loaded.
-2. **Home Page**: After loading, view helmet status. Connect to or disconnect from the helmet using the button provided.
-3. **Profile**: View and manage user details by clicking the profile icon.
