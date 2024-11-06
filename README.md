@@ -4,7 +4,7 @@
 
 ## Repository Structure
 
-```plaintext
+```
 Kran-Z/
 |-- Flutter_App/
 |     |-- (the flutter files)
@@ -12,7 +12,8 @@ Kran-Z/
 |
 |-- Fusion 360 Design/ 
 |     |-- (the .f3d design file)
-|     |-- (top, bottom, side, back, front view PNG files of the design) 
+|     |-- Images/
+|           |-- (top, bottom, side, back, front view PNG files of the design) 
 |     |-- README.md
 |
 |-- README.md
@@ -20,7 +21,7 @@ Kran-Z/
 
 ## Contents
 
-1. **Flutter_App/** 
+1. **Flutter App/**
    Contains all source code for the Kran-Z mobile app. The app is designed to seamlessly connect with the Kran-Z Smart Helmet, providing access to various features directly from the user's mobile device.
 
    - **Features:**
@@ -29,7 +30,7 @@ Kran-Z/
      - Profile management, including emergency contact information
      - Additional features for helmet health, timeline tracking, location, and turn signal color changes
 
-   For more details, please refer to the [Flutter_App README](Flutter_App/README.md).
+   For more details, please refer to the [Flutter App README](Flutter%20App/README.md).
 2. **Fusion 360 Design/**
    Contains the Autodesk Fusion 360 design file (.f3d) for the Kran-Z Smart Helmet and renders from various perspectives (top, bottom, side, back, front). This design provides a detailed 3D model of the helmet, allowing further customization or reference for manufacturing.
 
