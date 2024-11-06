@@ -15,7 +15,7 @@ To open and work with the `.f3d` file, you will need Autodesk Fusion 360:
 2. **Open the .f3d File**
 
    - Launch Fusion 360 and navigate to the **File** > **Open** option.
-   - Locate and select the `HelmetDesign.f3d` file from your local machine.
+   - Locate and select the `helmet.f3d` file from your local machine.
 3. **View Design Details**
 
    - Use Fusion 360's interface to rotate, zoom, and inspect the helmet from various angles.
