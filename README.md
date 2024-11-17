@@ -63,5 +63,5 @@ To use the **Kran-Z** mobile app or explore the helmet's 3D design, follow the i
    ```
 2. Navigate to the project directory:
    ```shell
-   cd Kran-Z-App
+   cd Kran-Z
    ```
