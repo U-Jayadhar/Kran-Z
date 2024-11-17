@@ -59,7 +59,7 @@ To use the **Kran-Z** mobile app or explore the helmet's 3D design, follow the i
 
 1. Clone the repository:
    ```shell
-   git clone https://github.com/U-Jayadhar/Kran-Z-App.git
+   git clone https://github.com/U-Jayadhar/Kran-Z.git
    ```
 2. Navigate to the project directory:
    ```shell
